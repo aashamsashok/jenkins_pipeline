@@ -20,7 +20,9 @@ pipeline {
         stage('onemw-pal') {
           steps {
             sh 'echo "Wating for free device to execute"&&sleep 10&&echo "Got device. Starting execution"'
-            fileExists 'testfile'
+            if(fileExists 'testfile') {
+              println "File present"
+            }
           }
         }
       }
