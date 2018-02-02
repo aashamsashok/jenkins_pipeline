@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Check and configure devices') {
       steps {
-        sh 'sh "echo "Updating images to required version"'
+        sh 'echo "Updating images to required version"'
       }
     }
     stage('functional_tests') {
