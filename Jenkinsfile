@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Check and configure devices') {
       steps {
-        sh 'sh "python tdk_driver.py -t get_builds_to_test"'
+        sh 'sh "echo "Updating images to required version"'
       }
     }
     stage('functional_tests') {
