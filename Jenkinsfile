@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'tdk_executor'
-    }
-    
-  }
+  agent any
   stages {
     stage('Check and configure devices') {
       steps {
